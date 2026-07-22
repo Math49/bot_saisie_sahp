@@ -1,0 +1,20 @@
+{
+  "name": "bot-saisie-sahp",
+  "version": "1.0.0",
+  "description": "Bot Discord de surveillance du coffre des saisies (SAHP) — RP StoryLife",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.5",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
