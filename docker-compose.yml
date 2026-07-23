@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       DISCORD_TOKEN: ${DISCORD_TOKEN}
-      MONGO_URI: ${MONGO_URI}
+      MONGODB_URI: ${MONGODB_URI}
     networks:
       - sahp-network
 
