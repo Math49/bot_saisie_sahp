@@ -3,8 +3,9 @@ services:
     image: ghcr.io/math49/bot_saisie_sahp:latest
     container_name: saisie-sahp
     restart: unless-stopped
-    env_file:
-      - .env
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      MONGO_URI: ${MONGO_URI}
     networks:
       - sahp-network
 
