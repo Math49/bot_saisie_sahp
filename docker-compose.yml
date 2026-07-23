@@ -3,6 +3,8 @@ services:
     image: ghcr.io/math49/bot_saisie_sahp:latest
     container_name: saisie-sahp
     restart: unless-stopped
+    env_file:
+      - .env
     networks:
       - sahp-network
 
